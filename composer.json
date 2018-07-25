@@ -1,23 +1,35 @@
 {
     "name": "itkee/think-addons",
-    "description": "The ThinkPHP5.1 Addons Package",
+    "description": "addons package for itkee",
+    "homepage": "https://github.com/itkee/think-addons",
     "license": "Apache-2.0",
+    "minimum-stability": "dev",
+    "version": "1.1.6",
     "authors": [
         {
             "name": "superman",
             "email": "superman@itkee.cn"
         }
     ],
-    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://github.com/itkee/think-addons/issues"
+    },
     "require": {
-        "topthink/framework": "5.1.*"
+        "php": ">=5.4.0",
+        "topthink/think-helper": ">=1.0.4",
+        "topthink/think-installer": ">=1.0.10"
     },
     "autoload": {
         "psr-4": {
             "think\\": "src/"
         },
         "files": [
-            "src/helper.php"
+            "src/common.php"
         ]
+    },
+    "extra": {
+        "think-config": {
+            "addons": "src/config.php"
+        }
     }
 }
